@@ -1,7 +1,7 @@
 import { awscdk } from 'projen';
 // import { UpdateSnapshot } from 'projen/lib/javascript';
 
-export interface CdklabsConstructLibraryOptions extends awscdk.AwsCdkConstructLibraryOptions {
+export interface CdklabsConstructLibraryOptions extends Omit<awscdk.AwsCdkConstructLibraryOptions, 'repositoryUrl' | 'authorAddress'> {
 }
 
 /**
@@ -17,9 +17,11 @@ export class CdklabsConstructLibrary extends awscdk.AwsCdkConstructLibrary {
         allowedUsernames: ['cdklabs-automation'],
         secret: 'GITHUB_TOKEN',
       },
-      authorEmail: 'aws-cdk-dev@amazon.com',
+      authorAddress: 'aws-cdk-dev@amazon.com', // recently renamed from authorEmail
       authorName: 'Amazon Web Services',
       authorOrganization: true,
+      repositoryUrl: '',
+
       // this is the value add, imo. this feature was added in 2 months ago to projen
       // the default is UpdateSnapshot.ALWAYS, which is a testing risk
       // https://github.com/projen/projen/pull/2129
