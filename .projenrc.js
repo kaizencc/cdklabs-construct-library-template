@@ -5,7 +5,7 @@ const project = new cdk.JsiiProject({
   defaultReleaseBranch: 'main',
   name: 'CdklabsConstructLibraryTemplate',
   repositoryUrl: 'https://github.com/kaizencc/cdklabs-construct-library-tempate.git',
-  pakcageName: 'cdklabs-construct-library-template',
+  packageName: 'cdklabs-construct-library-template',
   deps: ['projen'],
   peerDeps: ['projen'],
 });
