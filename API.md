@@ -14550,25 +14550,3 @@ this task should synthesize the project files.
 ---
 
 
-## Enums <a name="Enums" id="Enums"></a>
-
-### Stability <a name="Stability" id="cdklabs-construct-library-template.Stability"></a>
-
-#### Members <a name="Members" id="Members"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#cdklabs-construct-library-template.Stability.EXPERIMENTAL">EXPERIMENTAL</a></code> | *No description.* |
-| <code><a href="#cdklabs-construct-library-template.Stability.STABLE">STABLE</a></code> | *No description.* |
-
----
-
-##### `EXPERIMENTAL` <a name="EXPERIMENTAL" id="cdklabs-construct-library-template.Stability.EXPERIMENTAL"></a>
-
----
-
-
-##### `STABLE` <a name="STABLE" id="cdklabs-construct-library-template.Stability.STABLE"></a>
-
----
-

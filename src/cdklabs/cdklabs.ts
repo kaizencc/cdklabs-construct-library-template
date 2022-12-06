@@ -1,4 +1,5 @@
-import { CdkConstructLibrary, CdkConstructLibraryOptions, CdkTypeScriptProject, CdkTypeScriptProjectOptions } from './cdk';
+import { CdkConstructLibrary, CdkConstructLibraryOptions, CdkTypeScriptProject, CdkTypeScriptProjectOptions } from '../cdk';
+import { cdklabsCommonProps } from './properties';
 
 export interface CdklabsConstructLibraryOptions extends CdkConstructLibraryOptions {
 }
@@ -11,6 +12,7 @@ export interface CdklabsConstructLibraryOptions extends CdkConstructLibraryOptio
 export class CdklabsConstructLibrary extends CdkConstructLibrary {
   constructor(options: CdklabsConstructLibraryOptions) {
     super({
+      ...cdklabsCommonProps,
       ...options,
     });
   }
@@ -27,6 +29,7 @@ export interface CdklabsTypeScriptProjectOptions extends CdkTypeScriptProjectOpt
 export class CdklabsTypeScriptProject extends CdkTypeScriptProject {
   constructor(options: CdklabsTypeScriptProjectOptions) {
     super({
+      ...cdklabsCommonProps,
       ...options,
     });
   }

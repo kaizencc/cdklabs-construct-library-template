@@ -1,2 +1,2 @@
 export * from './cdk';
-export * from './cdklabs';
+export * from './cdklabs/cdklabs';
